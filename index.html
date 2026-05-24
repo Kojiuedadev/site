@@ -20,8 +20,8 @@
     </header>
     <section id="sobre-mim">
         <h2>Sobre mim</h2>
-        <img src="./Gemini_Generated_Image_eh1njneh1njneh1n.png"
-            alt="Alexandre Ueda" title="imagem de perfil" style="width: 250px;" />
+        <img src="./Gemini_Generated_Image_eh1njneh1njneh1n.png" alt="Alexandre Ueda" title="imagem de perfil"
+            style="width: 250px;" />
         <article>
             <p>
                 Olá! Meu nome é Alexandre Ueda e sou um desenvolvedor de software.
@@ -45,14 +45,83 @@
             </p>
         </article>
     </section>
+    <section id="habilidades">
+        <h2>Habilidades e tecnologias</h2>
+
+        <table style="width: 100%; border-collapse: collapse;" border="1">
+            <thead>
+                <tr>
+                    <th>Tecnologia</th>
+                    <th>Nível</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Iniciante</td>
+                    <td>Conhecimento sólido em estruturação de páginas web e semântica e responsiva.</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermediário</td>
+                    <td>Experiencia em estilização de páginas web e layout responsivo, flexbox e grid.</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Básico</td>
+                    <td>Desenvolvimento de aplicações web interativas.</td>
+                </tr>
+            </tbody>
+
+        </table>
+        
+    </section>
     <footer>
         <section id="contato">
             <h2>Contato</h2>
-            <address>
-                E-mail:
-                <a href="mailto:alexandre.ueda@example.com">alexandre.ueda@example.com</a>
-                Telefone: <a href="tel:+5547999999999">+55 47 99999-9999</a>
-            </address>
+            <p>Tem algum projeto em mente? Entre em contato comigo!</p>
+            <form action="">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+
+                <br />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Seu email" required />
+
+                <br />
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone" required />
+
+                <br />
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="projeto">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <br />
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" cols="20" rows="5" placeholder="Sua mensagem" required></textarea>
+
+                <br />
+
+                <input type="checkbox" id="inscricao" name="inscricao" />
+                <label for="inscricao">Desejo receber novidades por email</label>
+
+                <br />
+
+                <button type="submit">Enviar</button>
+
+            </form>
             <p>Copyright © 2026 Alexandre Ueda</p>
         </section>
     </footer>
